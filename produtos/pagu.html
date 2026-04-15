@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pintado Inteiro - O Gigante do Rio. Peixe fresco de rio com sabor intenso. Compre agora na Peixaria Rio Paraguai.">
+  <title>Pintado Inteiro - Peixaria Rio Paraguai</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../produtos.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <div class="logo">🐟 Peixaria Rio Paraguai</div>
+      <nav>
+        <a href="../index.html">Início</a>
+        <a href="../index.html#produtos">Produtos</a>
+        <a href="../receitas/diferenca-peixe-rio-vs-tanque.html">Blog/Dicas</a>
+        <a href="../index.html#contato">Contato</a>
+      </nav>
+      <button class="menu-toggle">☰</button>
+    </div>
+    <div class="mobile-menu">
+      <a href="../index.html">Início</a>
+      <a href="../index.html#produtos">Produtos</a>
+      <a href="../receitas/diferenca-peixe-rio-vs-tanque.html">Blog/Dicas</a>
+      <a href="../index.html#contato">Contato</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="section">
+      <div class="container">
+        <!-- BREADCRUMB -->
+        <nav class="breadcrumb">
+          <a href="../index.html">Início</a>
+          <span class="separator">/</span>
+          <a href="../index.html#produtos">Produtos</a>
+          <span class="separator">/</span>
+          <span class="current">Pintado Inteiro</span>
+        </nav>
+
+        <!-- GRID DE DUAS COLUNAS -->
+        <div class="product-detail-grid">
+          <!-- COLUNA ESQUERDA: IMAGENS -->
+          <div class="product-images">
+            <div class="main-image">
+              <img src="https://via.placeholder.com/500x500?text=Pintado+Inteiro" alt="Pintado Inteiro - O Gigante do Rio" id="mainImage">
+            </div>
+            <div class="thumbnail-gallery">
+              <img src="https://via.placeholder.com/80x80?text=Pintado+1" alt="Pintado vista 1" class="thumbnail" onclick="changeMainImage(this.src)">
+              <img src="https://via.placeholder.com/80x80?text=Pintado+2" alt="Pintado vista 2" class="thumbnail" onclick="changeMainImage(this.src)">
+              <img src="https://via.placeholder.com/80x80?text=Pintado+3" alt="Pintado vista 3" class="thumbnail" onclick="changeMainImage(this.src)">
+              <img src="https://via.placeholder.com/80x80?text=Pintado+4" alt="Pintado vista 4" class="thumbnail" onclick="changeMainImage(this.src)">
+            </div>
+          </div>
+
+          <!-- COLUNA DIREITA: INFORMAÇÕES -->
+          <div class="product-info">
+            <h1>Pintado Inteiro - O Gigante do Rio</h1>
+            
+            <div class="product-price">
+              <span class="price">R$ 45,90</span>
+              <span class="unit">/ kg</span>
+            </div>
+
+            <p class="product-description">
+              O Pintado é o rei dos peixes de rio! Com sua carne firme, sabor intenso e textura única, é perfeito para moquecas, caldos e frituras. Fresco, limpo na hora e embalado a vácuo para sua segurança.
+            </p>
+
+            <a href="https://wa.me/5567999999999?text=Gostaria%20de%20encomendar%20Pintado%20Inteiro" class="btn btn-primary btn-large" target="_blank">
+              Encomendar via WhatsApp
+            </a>
+
+            <!-- LISTA DE BENEFÍCIOS -->
+            <div class="benefits-list">
+              <div class="benefit">
+                <span class="benefit-icon">✓</span>
+                <span class="benefit-text">Limpo na hora</span>
+              </div>
+              <div class="benefit">
+                <span class="benefit-icon">✓</span>
+                <span class="benefit-text">Fresco do rio</span>
+              </div>
+              <div class="benefit">
+                <span class="benefit-icon">✓</span>
+                <span class="benefit-text">Embalado a vácuo</span>
+              </div>
+              <div class="benefit">
+                <span class="benefit-icon">✓</span>
+                <span class="benefit-text">Depuração garantida</span>
+              </div>
+            </div>
+
+            <!-- INFORMAÇÕES ADICIONAIS -->
+            <div class="product-specs">
+              <h3>Especificações</h3>
+              <ul>
+                <li><strong>Tipo:</strong> Peixe de Rio</li>
+                <li><strong>Origem:</strong> Rio Paraguai</li>
+                <li><strong>Apresentação:</strong> Inteiro</li>
+                <li><strong>Peso Mínimo:</strong> 2 kg</li>
+                <li><strong>Embalagem:</strong> Vácuo com gelo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABAS DE INFORMAÇÕES -->
+        <div class="product-tabs">
+          <div class="tabs-header">
+            <button class="tab-button active" data-tab="about">Sobre este Peixe</button>
+            <button class="tab-button" data-tab="preparation">Sugestão de Preparo</button>
+            <button class="tab-button" data-tab="storage">Armazenamento</button>
+          </div>
+
+          <div class="tabs-content">
+            <!-- TAB 1: SOBRE ESTE PEIXE -->
+            <div class="tab-content active" id="about">
+              <h2>Sobre o Pintado</h2>
+              <p>O Pintado é um dos peixes mais nobres das águas do Rio Paraguai. Com seu corpo alongado e manchas características, este peixe pode atingir tamanhos impressionantes. Sua carne é firme, de cor clara com tons rosados, e possui um sabor único que reflete sua alimentação natural no rio.</p>
+              
+              <p>O sabor do Pintado é intenso e marcante, resultado de sua dieta baseada em frutas nativas, insetos e pequenos peixes. Essa característica o torna ideal para preparações que exigem um peixe com personalidade. A textura é firme e não desfia facilmente, permitindo que o peixe mantenha sua forma mesmo em cozimentos prolongados.</p>
+              
+              <p>Quanto às espinhas, o Pintado possui uma estrutura óssea bem definida, com espinhas principais facilmente removíveis. Recomendamos solicitar ao vendedor que limpe e prepare o peixe conforme sua preferência. Na Peixaria Rio Paraguai, fazemos isso com maestria, garantindo um peixe pronto para o fogão.</p>
+
+              <div class="destaque-box">
+                <h3>Curiosidade</h3>
+                <p>O nome "Pintado" vem das manchas características que cobrem seu corpo. Esses peixes podem viver mais de 20 anos na natureza e são conhecidos por sua força e agilidade nas correntezas do rio.</p>
+              </div>
+            </div>
+
+            <!-- TAB 2: SUGESTÃO DE PREPARO -->
+            <div class="tab-content" id="preparation">
+              <h2>Sugestão de Preparo</h2>
+              
+              <h3>🍲 Moqueca (Recomendado)</h3>
+              <p>O Pintado é perfeito para moquecas! Sua carne firme resiste bem ao cozimento no molho de tomate, cebola e temperos. A textura firme não desfia, mantendo a apresentação do prato. Recomendamos usar leite de coco e azeite de dendê para uma moqueca autêntica.</p>
+
+              <h3>🍳 Frito</h3>
+              <p>Excelente para frituras! Corte o peixe em postas e frite em óleo quente. A carne firme não absorve muito óleo, resultando em um prato crocante por fora e macio por dentro. Acompanhe com limão e farofa.</p>
+
+              <h3>🥘 Ensopado/Caldo</h3>
+              <p>Ideal para caldos e ensopados. O Pintado libera um caldo saboroso e sua carne se mantém firme mesmo após horas de cozimento. Perfeito para receitas tradicionais como caldo de peixe com mandioca.</p>
+
+              <h3>🔥 Assado (Menos Recomendado)</h3>
+              <p>Embora seja possível assar, o Pintado é menos indicado para grelhados simples, pois sua carne pode ressecar. Se desejar assar, recomendamos marinadas com azeite e ervas aromáticas.</p>
+            </div>
+
+            <!-- TAB 3: ARMAZENAMENTO -->
+            <div class="tab-content" id="storage">
+              <h2>Como Armazenar</h2>
+              
+              <h3>Refrigerador (0-4°C)</h3>
+              <p>Se não for usar imediatamente, mantenha o peixe na embalagem a vácuo dentro do refrigerador. Dessa forma, o Pintado se mantém fresco por até 3 dias. Certifique-se de que o refrigerador está na temperatura correta.</p>
+
+              <h3>Congelador (-18°C ou menos)</h3>
+              <p>Para armazenamento prolongado, coloque o peixe no congelador. Quando bem congelado, o Pintado pode ser mantido por até 6 meses sem perder qualidade. Descongelue na geladeira antes de usar, nunca em temperatura ambiente.</p>
+
+              <h3>Dicas Importantes</h3>
+              <ul style="margin-left: 1.5rem;">
+                <li>Não recongelue o peixe após descongelá-lo</li>
+                <li>Mantenha a embalagem a vácuo intacta até o momento do uso</li>
+                <li>Se notar qualquer odor estranho, descarte o peixe</li>
+                <li>Sempre limpe bem a tábua e utensílios após preparar peixe cru</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEÇÃO "VEJA TAMBÉM" -->
+        <section class="related-products">
+          <h2>Veja Também</h2>
+          <p>Conheça outros peixes incríveis que temos em estoque:</p>
+
+          <div class="products-grid">
+            <!-- Pacu -->
+            <div class="product-card">
+              <div class="product-image">🐟</div>
+              <div class="product-content">
+                <h3>Pacu</h3>
+                <p>Peixe de rio com carne vermelha e sabor robusto. Textura firme que resiste bem ao cozimento.</p>
+                <p class="price-tag">R$ 38,50 / kg</p>
+                <a href="pacu.html" class="btn btn-secondary">Ver Detalhes</a>
+              </div>
+            </div>
+
+            <!-- Salmão -->
+            <div class="product-card">
+              <div class="product-image">🐟</div>
+              <div class="product-content">
+                <h3>Salmão</h3>
+                <p>Peixe de tanque com carne macia e gordura equilibrada. Sabor delicado e versátil.</p>
+                <p class="price-tag">R$ 52,90 / kg</p>
+                <a href="salmao.html" class="btn btn-secondary">Ver Detalhes</a>
+              </div>
+            </div>
+
+            <!-- Dourado -->
+            <div class="product-card">
+              <div class="product-image">🐠</div>
+              <div class="product-content">
+                <h3>Dourado</h3>
+                <p>Peixe de rio com carne dourada e sabor único. Ideal para grelhados e frituras.</p>
+                <p class="price-tag">R$ 55,00 / kg</p>
+                <a href="dourado.html" class="btn btn-secondary">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Peixaria Rio Paraguai</h3>
+        <p>Peixes frescos de rio e tanque com qualidade garantida.</p>
+        <p><strong>Endereço:</strong> Rua das Águas, 123 - Dourados, MS</p>
+      </div>
+      <div class="footer-section">
+        <h3>Links Úteis</h3>
+        <a href="../index.html">Página Inicial</a>
+        <a href="../politica-de-privacidade.html">Política de Privacidade</a>
+        <a href="../receitas/diferenca-peixe-rio-vs-tanque.html">Blog/Dicas</a>
+      </div>
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5567999999999">(67) 99999-9999</a></p>
+        <p><strong>Email:</strong> <a href="mailto:contato@peixariarioparaguai.com.br">contato@peixariarioparaguai.com.br</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Peixaria Rio Paraguai. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner">
+    <div class="cookie-message">
+      Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="../politica-de-privacidade.html">Política de Privacidade</a>.
+    </div>
+    <div class="cookie-actions">
+      <button class="cookie-accept">Aceitar</button>
+    </div>
+  </div>
+
+  <script src="../script.js"></script>
+  <script src="produtos.js"></script>
+</body>
+</html>

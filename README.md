@@ -34,8 +34,6 @@ peixaria-rio-paraguai/
 - **Benefícios**: Destaque dos diferenciais da peixaria
 - **Produtos**: Showcase dos principais peixes e frutos do mar
 - **Sobre Nós**: História e valores da empresa
-- **Depoimentos**: Feedback de clientes satisfeitos
-- **Ofertas Especiais**: Promoções e descontos
 - **Contato**: Informações completas e mapa integrado
 - **WhatsApp Float**: Botão flutuante para contato direto
 - **Animações**: Efeitos visuais suaves e profissionais
@@ -102,8 +100,4 @@ Para dúvidas ou suporte técnico, consulte a documentação ou entre em contato
 Este projeto foi desenvolvido especificamente para a Peixaria Rio Paraguai. Todos os direitos reservados.
 
 ---
-
-**Desenvolvido por Manus AI**  
-Data: 2024  
-Versão: 1.0
 
