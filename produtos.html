@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Peixaria Rio Paraguai</title>
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <link rel="stylesheet" href="styles/produtos.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Peixaria Rio Paraguai</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="produtos/index.html" class="nav-link">Produtos</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="nav-contact">
+                    <a href="https://wa.me/5565996320873" target="_blank" class="phone-btn">
+                        <i class="fas fa-phone"></i>
+                        (65) 99632-0873
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="catalog-main container">
+        
+        <header class="catalog-header">
+            <h1>Todo o Nosso Mar em Suas Mãos</h1>
+            <p>Selecione a categoria e encontre o peixe perfeito para hoje.</p>
+        </header>
+
+        <div class="filter-bar">
+            <button class="filter-btn active">Todos</button>
+            <button class="filter-btn">Peixes de Rio</button>
+            <button class="filter-btn">Peixes de Tanque</button>
+            <button class="filter-btn">Cortes Especiais</button>
+        </div>
+
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <span class="product-badge">Rio</span>
+                <img src="images/pintado.jpeg" alt="Pintado" class="product-image">
+                <div class="product-content">
+                    <h3>Pintado Inteiro</h3>
+                    <p>O rei dos rios, carne firme e sem espinhas.</p>
+                    <a href="pintado.html" class="btn-detalhes">Ver Cortes e Preços</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="product-badge badge-tanque">Tanque</span>
+                <img src="images/tilapia.jpg" alt="Tilápia" class="product-image">
+                <div class="product-content">
+                    <h3>Tilápia Fresca</h3>
+                    <p>Sabor suave e frescor diário.</p>
+                    <a href="produtos/tilapia.html" class="btn-detalhes">Ver Cortes e Preços</a>
+                </div>
+            </div>
+
+            </div>
+    </main>
+
+    </body>
+</html>

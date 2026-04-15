@@ -1,0 +1,202 @@
+/* ==========================================================
+   CSS Específico para a Página de Detalhes do Produto
+   Arquivo: produto-detalhe.css
+   ========================================================== */
+
+/* --- Navegação de Migalhas (Breadcrumb) --- */
+.breadcrumb {
+    padding: 120px 20px 20px; /* Espaço extra no topo por causa do header fixo */
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    color: var(--cinza-texto);
+}
+
+.breadcrumb a {
+    color: var(--azul-nautico);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover {
+    color: var(--vermelho-coral);
+}
+
+.breadcrumb span {
+    margin: 0 8px;
+    color: #999;
+}
+
+/* --- Layout Principal do Produto --- */
+.product-detail-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* --- Galeria de Imagens --- */
+.product-gallery {
+    position: sticky;
+    top: 100px; /* Faz a imagem acompanhar a rolagem do texto */
+}
+
+.product-gallery .main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px var(--sombra);
+    object-fit: cover;
+}
+
+/* --- Informações do Produto (Lado Direito) --- */
+.product-info h1 {
+    font-size: 2.5rem;
+    color: var(--azul-nautico);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.product-short-desc {
+    font-size: 1.1rem;
+    color: var(--cinza-texto);
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.product-price-box {
+    background-color: var(--branco-areia);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid var(--azul-agua-clara);
+    margin-bottom: 30px;
+}
+
+.product-price-box .price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--vermelho-coral);
+    display: block;
+}
+
+.product-price-box .price-unit {
+    font-size: 1rem;
+    color: var(--cinza-texto);
+    font-weight: normal;
+}
+
+/* --- Opções de Cortes --- */
+.product-cuts h3 {
+    font-size: 1.2rem;
+    color: var(--azul-nautico);
+    margin-bottom: 15px;
+}
+
+.cuts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.cut-option {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transicao);
+    background-color: white;
+}
+
+.cut-option:hover {
+    border-color: var(--azul-agua-clara);
+    transform: translateY(-2px);
+}
+
+.cut-option.active {
+    border-color: var(--vermelho-coral);
+    background-color: var(--branco-areia);
+    font-weight: bold;
+    color: var(--azul-nautico);
+}
+
+.cut-option i {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--azul-nautico);
+    margin-bottom: 8px;
+}
+
+/* --- Botão Gigante de Ação --- */
+.btn-large-whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--vermelho-coral);
+    color: white;
+    width: 100%;
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: var(--transicao);
+    box-shadow: 0 4px 15px rgba(229, 56, 59, 0.3);
+}
+
+.btn-large-whatsapp:hover {
+    background-color: #c72e2e;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(229, 56, 59, 0.4);
+}
+
+/* --- Área de Texto Rico (Para SEO e AdSense) --- */
+.product-details-content {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px var(--sombra);
+}
+
+.product-details-content h2 {
+    color: var(--azul-nautico);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--azul-agua-clara);
+}
+
+.product-details-content p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+    .product-detail-section {
+        grid-template-columns: 1fr; /* Coloca imagem e texto em uma coluna só no celular */
+        gap: 30px;
+        padding: 20px 15px;
+    }
+    
+    .product-gallery {
+        position: relative;
+        top: 0;
+    }
+
+    .product-info h1 {
+        font-size: 2rem;
+    }
+    
+    .product-details-content {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+}
